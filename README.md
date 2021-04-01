@@ -1,5 +1,12 @@
-# react-template
-> @czc/cli脚手架模板
+<!--
+ * @Description: README
+ * @Author: caizichen1
+ * @Date: 2021-03-31 16:19:02
+ * @LastEditors: caizichen1
+ * @LastEditTime: 2021-04-01 16:33:44
+-->
+# FFXIVSimulator
+> FFXIV机制模拟器
 
 ### 安装依赖
 ```js
