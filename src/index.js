@@ -3,7 +3,7 @@
  * @Author: caizichen1
  * @Date: 2021-03-31 16:19:02
  * @LastEditors: caizichen1
- * @LastEditTime: 2021-04-01 15:12:25
+ * @LastEditTime: 2021-04-19 14:32:21
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -14,7 +14,6 @@ class App extends React.Component {
   generateRoute = router => {
     const finalRoutes = router.map(item => {
       const { path, component } = item;
-      console.log(path)
       return (
         <Route key={path} path={path} component={component} exact></Route>
       );

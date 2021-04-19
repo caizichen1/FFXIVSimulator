@@ -3,7 +3,7 @@
  * @Author: caizichen1
  * @Date: 2021-04-01 15:18:22
  * @LastEditors: caizichen1
- * @LastEditTime: 2021-04-01 16:29:32
+ * @LastEditTime: 2021-04-01 20:55:56
  */
 
 let r = ''
@@ -33,36 +33,36 @@ const keydown = (e) => {
     case 37: {
       if (!goLeft) {
         goLeft = setInterval(() => {
-          const left = parseInt(role.style.left.split('px')[0]) - 2;
+          const left = parseInt(role.style.left.split('px')[0]) - 1;
           role.style.left = `${left}px`
-        }, 20);
+        }, 10);
       }
       break;
     }
     case 38: {
       if (!goTop) {
         goTop = setInterval(() => {
-          const top = parseInt(role.style.top.split('px')[0]) - 2;
+          const top = parseInt(role.style.top.split('px')[0]) - 1;
           role.style.top = `${top}px`
-        }, 20);
+        }, 10);
       }
       break;
     }
     case 39: {
       if (!goRight) {
         goRight = setInterval(() => {
-          const left = parseInt(role.style.left.split('px')[0]) + 2;
+          const left = parseInt(role.style.left.split('px')[0]) + 1;
           role.style.left = `${left}px`
-        }, 20);
+        }, 10);
       }
       break;
     }
     case 40: {
       if (!goBottom) {
         goBottom = setInterval(() => {
-          const top = parseInt(role.style.top.split('px')[0]) + 2;
+          const top = parseInt(role.style.top.split('px')[0]) + 1;
           role.style.top = `${top}px`
-        }, 20);
+        }, 10);
       }
       break;
     }
