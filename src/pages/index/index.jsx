@@ -7,12 +7,15 @@
  */
 import React from 'react';
 import './index.scss'
-
+// import RangeDecay from '../../components/methods/rangeDecay'
+import DamageShare from '../../components/methods/damageShare'
 export default class Index extends React.Component {
 
   render() {
     return (
-      <div className='container'>1</div>
+      <div className='container'>
+        <DamageShare />
+      </div>
     );
   }
 }

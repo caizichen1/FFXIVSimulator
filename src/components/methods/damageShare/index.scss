@@ -1,0 +1,154 @@
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.damageshare {
+    @include flex_center;
+
+    width: 350px;
+    height: 350px;
+
+    .circle {
+        @include flex_center;
+
+        position: relative;
+
+        width: 150px;
+        height: 150px;
+        border: 1px solid yellow;
+        border-radius: 75px;
+
+        animation: 1.2s flash infinite;
+
+        @keyframes flash {
+            0% {
+                border-color: white;
+                box-shadow: 0 0 5px rgba(255, 255, 0, 0.2), inset 0 0 5px rgba(255, 255, 0, .1), 0 1px 0 rgb(252, 252, 185);
+            }
+
+            100% {
+                border-color: rgb(235, 235, 131);
+                box-shadow: 0 0 10px rgba(235, 235, 131, .6), inset 0 0 10px rgba(235, 235, 131, .4), 0 1px 0 rgb(235, 235, 131);
+            }
+        }
+
+        .arrow-box {
+            position: absolute;
+            bottom: -95px;
+
+            width: 60px;
+            height: 100px;
+
+            .arrow {
+                position: absolute;
+                bottom: 0;
+
+                margin: 0 auto;
+
+                width: 60px;
+                height: 40px;
+                clip-path: polygon(50% 0,
+                        100% 60%,
+                        100% 100%,
+                        50% 40%,
+                        0 100%,
+                        0 60%,
+                        50% 0);
+            }
+
+            .one {
+                animation: 1.2s move-buttom-one infinite;
+
+                @keyframes move-buttom-one {
+                    0% {
+                        background-color: rgb(235, 235, 131);
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        transform: translateY(-60px);
+                    }
+
+                    100% {
+                        background-color: yellow;
+                        transform: translateY(-60px);
+                    }
+                }
+            }
+
+            .two {
+                animation: 0.9s 0.3s move-buttom-two infinite;
+
+                @keyframes move-buttom-two {
+                    0% {
+                        background-color: rgb(235, 235, 131);
+                    }
+
+                    50% {
+                        background-color: yellow;
+                        transform: translateY(-60px);
+                    }
+
+                    100% {
+                        background-color: yellow;
+                        transform: translateY(-60px);
+                    }
+                }
+            }
+
+            .third {
+                animation: 0.6s 0.6s move-buttom-third infinite;
+
+                @keyframes move-buttom-third {
+                    0% {
+                        background-color: rgb(235, 235, 131);
+                    }
+
+                    75% {
+                        background-color: yellow;
+                        transform: translateY(-60px);
+                    }
+
+                    100% {
+                        background-color: yellow;
+                        transform: translateY(-60px);
+                    }
+                }
+            }
+
+            .four {
+                animation: 0.3s 0.9s move-buttom-four infinite;
+
+                @keyframes move-buttom-four {
+                    0% {
+                        background-color: rgb(235, 235, 131);
+                    }
+
+                    100% {
+                        background-color: yellow;
+                        transform: translateY(-60px);
+                    }
+                }
+            }
+        }
+
+        .top {
+            top: -95px;
+            transform: rotate(180deg);
+        }
+
+        .left {
+            top: 24px;
+            left: -75px;
+            transform: rotate(90deg);
+        }
+
+        .right {
+            top: 24px;
+            right: -75px;
+            transform: rotate(-90deg);
+        }
+    }
+}
