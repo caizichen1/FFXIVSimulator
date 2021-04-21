@@ -2,8 +2,8 @@
  * @Description: 
  * @Author: caizichen1
  * @Date: 2021-03-31 16:19:02
- * @LastEditors: caizichen1
- * @LastEditTime: 2021-04-21 10:38:41
+ * @LastEditors: GUI
+ * @LastEditTime: 2021-04-21 23:12:31
  */
 import React from 'react';
 import Role from '../../components/role'
@@ -11,7 +11,7 @@ import SkillLoading from '../../components/commonMechanism/skillLoading'
 import './index.scss'
 export default class Index extends React.Component {
   state = {
-    role: 'H1',
+    role: 'D2',
     mechanism: '',
   }
 
@@ -20,11 +20,11 @@ export default class Index extends React.Component {
   }
 
   change_state_1 = () => {
-    this.setState({ mechanism: '伤害分摊' })
+    this.setState({ mechanism: 'DamageShare' })
   }
 
   change_state_2 = () => {
-    this.setState({ mechanism: '距离衰减' })
+    this.setState({ mechanism: 'RangeDecay' })
   }
 
   use_skill = () => {

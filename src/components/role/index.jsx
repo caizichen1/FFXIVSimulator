@@ -1,8 +1,14 @@
+/*
+ * @Description: 
+ * @Author: GUI
+ * @Date: 2021-04-21 22:48:50
+ * @LastEditors: GUI
+ * @LastEditTime: 2021-04-21 23:09:48
+ */
 import React from 'react';
 import DamageShare from './../commonMechanism/damageShare';
 import RangeDecay from './../commonMechanism/rangeDecay';
 import './index.scss'
-
 
 export default class Role extends React.Component {
 
@@ -61,8 +67,8 @@ export default class Role extends React.Component {
           <span>{role.name}</span>
 
           {
-            mechanism === '伤害分摊' ? <DamageShare /> :
-              mechanism === '距离衰减' ? <RangeDecay /> :
+            mechanism === 'DamageShare' ? <DamageShare /> :
+              mechanism === 'RangeDecay' ? <RangeDecay /> :
                 console.log("此时角色无作用机制！")
           }
 
