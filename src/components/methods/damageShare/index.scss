@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.damageshare {
+.damageshare-compoent {
     @include flex_center;
 
     width: 350px;
@@ -28,9 +28,14 @@
                 box-shadow: 0 0 5px rgba(255, 255, 0, 0.2), inset 0 0 5px rgba(255, 255, 0, .1), 0 1px 0 rgb(252, 252, 185);
             }
 
-            100% {
+            50% {
                 border-color: rgb(235, 235, 131);
                 box-shadow: 0 0 10px rgba(235, 235, 131, .6), inset 0 0 10px rgba(235, 235, 131, .4), 0 1px 0 rgb(235, 235, 131);
+            }
+
+            100% {
+                border-color: white;
+                box-shadow: 0 0 5px rgba(255, 255, 0, 0.2), inset 0 0 5px rgba(255, 255, 0, .1), 0 1px 0 rgb(252, 252, 185);
             }
         }
 
@@ -59,76 +64,87 @@
             }
 
             .one {
-                animation: 1.2s move-buttom-one infinite;
+                animation: 1s move-buttom-one linear infinite;
 
                 @keyframes move-buttom-one {
                     0% {
-                        background-color: rgb(235, 235, 131);
+                        background-color: rgb(255, 210, 0);
                     }
 
-                    25% {
-                        background-color: yellow;
+                    20% {
+                        background-color: rgb(255, 220, 0);
+                        transform: translateY(-15px);
+                    }
+
+                    40% {
+                        background-color: rgb(255, 230, 0);
+                        transform: translateY(-30px);
+                    }
+
+                    60% {
+                        background-color: rgb(255, 240, 0);
+                        transform: translateY(-45px);
+                    }
+
+                    80% {
+                        background-color: rgb(255, 250, 0);
                         transform: translateY(-60px);
                     }
-
                     100% {
-                        background-color: yellow;
+                        background-color: rgb(255, 250, 0);
                         transform: translateY(-60px);
                     }
                 }
             }
 
             .two {
-                animation: 0.9s 0.3s move-buttom-two infinite;
+                animation: 1s 0.2s move-buttom-two infinite;
 
                 @keyframes move-buttom-two {
                     0% {
-                        background-color: rgb(235, 235, 131);
-                    }
-
-                    50% {
-                        background-color: yellow;
-                        transform: translateY(-60px);
+                        background-color: rgb(255, 220, 0);
+                        transform: translateY(-15px);
+                        opacity: 1;
                     }
 
                     100% {
-                        background-color: yellow;
-                        transform: translateY(-60px);
+                        background-color: rgb(255, 220, 0);
+                        transform: translateY(-15px);
+                        opacity: 0;
                     }
                 }
             }
 
             .third {
-                animation: 0.6s 0.6s move-buttom-third infinite;
+                animation: 1s 0.4s move-buttom-third infinite;
 
                 @keyframes move-buttom-third {
                     0% {
-                        background-color: rgb(235, 235, 131);
+                        background-color: rgb(255, 230, 0);
+                        transform: translateY(-30px);
+                        opacity: 1;
                     }
-
-                    75% {
-                        background-color: yellow;
-                        transform: translateY(-60px);
-                    }
-
                     100% {
                         background-color: yellow;
-                        transform: translateY(-60px);
+                        transform: translateY(-30px);
+                        opacity: 0;
                     }
                 }
             }
 
             .four {
-                animation: 0.3s 0.9s move-buttom-four infinite;
+                animation: 1s 0.6s move-buttom-four infinite;
 
                 @keyframes move-buttom-four {
                     0% {
-                        background-color: rgb(235, 235, 131);
+                        background-color: rgb(255, 240, 0);
+                        transform: translateY(-45px);
+                        opacity: 1;
                     }
-
                     100% {
                         background-color: yellow;
-                        transform: translateY(-60px);
+                        transform: translateY(-45px);
+                        opacity: 0;
                     }
                 }
             }

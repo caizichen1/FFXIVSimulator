@@ -44,11 +44,11 @@
     }
 
     .bottom {
-        animation: 2s move-bottom infinite;
+        animation: 1.5s move-bottom infinite;
 
         @keyframes move-bottom {
             50% {
-                transform: translateY(40px);
+                transform: translateY(20px);
             }
         }
     }
@@ -58,7 +58,7 @@
         left: 50px;
         top: 65px;
 
-        animation: 2s move-left infinite;
+        animation: 1.5s move-left infinite;
 
         @keyframes move-left {
             0% {
@@ -66,7 +66,7 @@
             }
 
             50% {
-                transform: translate(-28.28px, -28.28px) rotate(120deg);
+                transform: translate(-14.14px, -14.14px) rotate(120deg);
             }
 
             100% {
@@ -80,7 +80,7 @@
         right: 50px;
         top: 65px;
 
-        animation: 2s move-right infinite;
+        animation: 1.5s move-right infinite;
 
         @keyframes move-right {
             0% {
@@ -88,7 +88,7 @@
             }
 
             50% {
-                transform: translate(28.28px, -28.28px) rotate(-120deg);
+                transform: translate(14.14px, -14.14px) rotate(-120deg);
             }
 
             100% {

@@ -5,7 +5,7 @@ import './index.scss'
 export default class DamageShare extends Component {
     render() {
         return (
-            <div className="damageshare">
+            <div className="damageshare-compoent">
                 <div className="circle">
                     <Role />
                     <div className="arrow-box bottom">
