@@ -1,8 +1,15 @@
 .container {
-  width: 100vh;
-  text-align: center;
-  font-size: 100px;
-  color: #88f2fa;
+  width: 100%;
+  text-align: right;
+
+  button{
+    margin: 0 2px;
+  }
+
+  .role{
+    margin-top: 100px;
+    margin-left: 100px;
+  }
 }
 
 
