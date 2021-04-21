@@ -1,12 +1,17 @@
 $border-color: #ab8e54;
 $font-color:#dac0ae;
 $T-bgc: rgb(84, 94, 153);
-$D-bgc:rgb(115,40,40);
-$H-bgc:rgb(52,102,36);
+$D-bgc:rgb(115, 40, 40);
+$H-bgc:rgb(52, 102, 36);
+
+@mixin transform_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .roles {
-    display: flex;
-
     .role {
         display: flex;
         justify-content: center;
@@ -23,6 +28,17 @@ $H-bgc:rgb(52,102,36);
             inset 0.5px 1px 1px 0.5px #000,
             0.5px 1px 1px 0.5px #000;
 
+        position: relative;
+
+        .damageshare-component {
+            @include transform_center;
+        }
+
+        .rangedecay-component {
+            @include transform_center;
+        }
+
+
         span {
             font-size: 22px;
             color: $font-color;
@@ -33,11 +49,11 @@ $H-bgc:rgb(52,102,36);
         background-color: $T-bgc;
     }
 
-    .D{
+    .D {
         background-color: $D-bgc;
     }
 
-    .H{
+    .H {
         background-color: $H-bgc;
     }
 }
