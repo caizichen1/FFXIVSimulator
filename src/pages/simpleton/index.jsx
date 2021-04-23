@@ -2,12 +2,13 @@
  * @Description: 
  * @Author: caizichen1
  * @Date: 2021-03-31 16:21:37
- * @LastEditors: caizichen1
- * @LastEditTime: 2021-04-01 15:57:26
+ * @LastEditors: GUI
+ * @LastEditTime: 2021-04-21 23:10:52
  */
 import React from 'react';
 import { keyboardTools } from "../../utils/keyboardTools";
 import { initRolePosition } from "../../utils/role";
+import Role from '../../components/role'
 import './index.scss'
 
 export default class Simpleton extends React.Component {
@@ -16,17 +17,19 @@ export default class Simpleton extends React.Component {
     this.state = {
     };
   }
-  
+
   componentDidMount() {
     initRolePosition()
     keyboardTools('role-st')
   }
 
   render() {
+    const { role, mechanism } = this.props.location.state || {}
     return (
       <div className='container'>
-          <div></div>
-          <div className="role role-st">1</div>
+        <div className="role role-st">
+          <Role role={role} mechanism={mechanism} />
+        </div>
       </div>
     );
   }
