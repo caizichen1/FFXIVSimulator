@@ -1,0 +1,76 @@
+{
+  "16": [
+    {
+      "title": "放射式波动炮",
+      "tts": "全屏AOE",
+      "needChant" : true,
+      "start": 12,
+      "needAssign": false
+    }
+  ],
+  "26": [
+    {
+      "title": "暗之战技",
+      "tts": "分摊",
+      "needChant" : true,
+      "start": 22,
+      "needAssign": true,
+      "assignRole": ["T"]
+    },
+    {
+      "title": "暗之战技",
+      "tts": "分散",
+      "needChant" : true,
+      "start": 22,
+      "needAssign": true,
+      "assignRole": ["T"]
+    }
+  ],
+  "36": [
+    {
+      "title": "暗之战技",
+      "tts": "分摊",
+      "needChant" : true,
+      "start": 22,
+      "needAssign": true,
+      "assignRole": ["T"]
+    },
+    {
+      "title": "暗之战技",
+      "tts": "分散",
+      "needChant" : true,
+      "start": 22,
+      "needAssign": true,
+      "assignRole": ["T"]
+    }
+  ],
+  "47": [
+    {
+      "title": "侵蚀之暗",
+      "tts": "死刑",
+      "needChant" : true,
+      "start": 22,
+      "needAssign": true,
+      "assignRole": ["T1"]
+    }
+  ],
+  "62": [
+    {
+      "title": "暗黑森林",
+      "tts": "全屏AOE",
+      "needChant" : true,
+      "start": 22,
+      "needAssign": false
+    }
+  ],
+  "73": [
+    {
+      "title": "暗之泛滥",
+      "tts": "击退",
+      "needChant" : true,
+      "start": 22,
+      "needAssign": true,
+      "assignRole": ["T1"]
+    }
+  ]
+}
